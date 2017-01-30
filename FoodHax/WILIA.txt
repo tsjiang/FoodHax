@@ -1,0 +1,29 @@
+WHAT I LEARNED IN ANDROID
+Style 
+	- overall reusable xml tag xml attributes 
+
+Drawable
+	- item must be a child of selector element 
+
+Custom Views, use this for making the hex buttons later	
+https://developer.android.com/training/custom-views/index.html
+
+ImageButton 
+https://www.mkyong.com/android/android-imagebutton-example/
+
+Custom Buttons 
+http://stackoverflow.com/questions/18507351/how-to-create-custom-button-in-android-using-xml-styles
+
+NUTRITION API
+https://ndb.nal.usda.gov/ndb/doc/
+API KEY:xcgRze7hjFjxj91zy49DxJshAN5rcpwuK3tNJHsB
+email: sallie_j@hotmail.ca
+ex) https://api.data.gov/nrel/alt-fuel-stations/v1/nearest.json?api_key=xcgRze7hjFjxj91zy49DxJshAN5rcpwuK3tNJHsB&location=Denver+CO
+
+Limited Free Account 
+https://platform.fatsecret.com/api/Default.aspx?screen=prem
+
+RECIPE API
+http://food2fork.com/about/api
+500 API CALLS/Day
+

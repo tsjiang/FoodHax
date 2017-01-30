@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/Background">
+        <TextView android:id="@+id/title"
+            style="@style/PageTitle"
+            android:text="Macros"/>
+
+        <Button android:id="@+id/add1"
+            style="@style/Button"
+            android:text="Add Item"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="76dp" />
+
+        <Button android:id="@+id/add2"
+            style="@style/Button"
+            android:text="Add Recipe"
+            android:layout_marginStart="42dp"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/add1" />
+
+        <TextView android:id="@+id/subTitle"
+            style="@style/Title"
+            android:layout_below="@+id/add1"
+            android:text="Food Journal"/>
+
+        <ImageButton android:id="@+id/searchButton"
+            style="@style/SearchButton"
+            android:layout_alignRight="@+id/subTitle"
+            android:layout_alignTop ="@+id/subTitle"
+            />
+
+        <fragment android:id="@+id/searchResult"
+            style="@style/SearchResult"
+            android:name="android.app.ListFragment"
+            tools:layout="@android:layout/test_list_item"
+            android:layout_below="@+id/subTitle"
+            />
+    </RelativeLayout>
+</LinearLayout>

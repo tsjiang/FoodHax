@@ -1,0 +1,39 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="tsj.foodhax.RecipeFragment"
+style="@style/Background">
+<TextView android:id="@+id/title"
+    style="@style/PageTitle"
+    android:text="Recipes"/>
+
+<EditText android:id="@+id/search"
+    style="@style/SearchField"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+    android:hint="Search for Recipe"
+    android:layout_below="@+id/title" />
+
+<ImageButton android:id="@+id/searchButton"
+    style="@style/SearchButton"
+    android:layout_alignTop="@+id/search"
+    android:layout_toRightOf="@+id/search"
+    />
+
+<fragment android:id="@+id/searchResult"
+    style="@style/SearchResult"
+    android:name="android.app.ListFragment"
+    tools:layout="@android:layout/test_list_item"
+    android:layout_below="@+id/search"
+    android:layout_marginBottom="100dp"
+    />
+
+<Button android:id="@+id/addNew"
+    style="@style/Button"
+    android:text="Create New"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"/>
+
+</RelativeLayout>

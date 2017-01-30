@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/Background">
+
+        <TextView android:id="@+id/title"
+            style="@style/PageTitle"
+            android:text="Summary"/>
+
+        <FrameLayout android:id="@+id/display"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </FrameLayout>
+
+        <Button android:id="@+id/DailyButton"
+            style="@style/Button"
+            android:text="Daily"
+            android:layout_alignTop="@+id/WeeklyButton"
+            android:layout_toStartOf="@+id/WeeklyButton"
+            android:layout_marginEnd="20dp" />
+
+        <Button android:id="@+id/WeeklyButton"
+            style="@style/Button"
+            android:text="Weekly"
+            android:layout_marginBottom="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton android:id="@+id/searchButton"
+            style="@style/SearchButton"
+            android:layout_alignTop="@+id/WeeklyButton"
+            android:layout_toRightOf="@+id/WeeklyButton"
+            android:layout_marginLeft="30dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

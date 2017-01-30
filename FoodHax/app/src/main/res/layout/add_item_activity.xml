@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/Background">
+        <TextView android:id="@+id/title"
+            style="@style/PageTitle"
+            android:text="Add Food Item"/>
+
+        <EditText android:id="@+id/search"
+            style="@style/SearchField"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Food Item"
+            android:layout_below="@+id/title" />
+
+        <ImageButton android:id="@+id/searchButton"
+            style="@style/SearchButton"
+            android:layout_alignTop="@+id/search"
+            android:layout_toRightOf="@+id/search"
+            />
+
+        <fragment android:id="@+id/searchResult"
+         style="@style/SearchResult"
+            android:name="android.app.ListFragment"
+            tools:layout="@android:layout/test_list_item"
+            android:layout_below="@+id/search"
+           />
+
+    </RelativeLayout>
+</LinearLayout>
